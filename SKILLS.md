@@ -1,6 +1,6 @@
 # 本机 Agent 技能清单（Skills Inventory）
 
-> 扫描时间：2026-10-03 17:30 ｜ 机器：Windows（用户 denghao）｜ 扫描工具：DSH 技能管理 v1.1.8 数据核对
+> 扫描时间：2026-10-03 17:39 ｜ 机器：Windows（用户 denghao）｜ 扫描工具：DSH 技能管理 v1.1.8 数据核对
 >
 > **去重规则**：同一技能（按技能目录名/`SKILL.md` 中的 `name` 识别）在本机多个 Agent 中安装时，清单只收录一条，并在「来源」矩阵中标注每个 Agent 的安装方式：✅ = 实体副本，🔗 = 目录链接（junction/symlink），空白 = 未安装。
 
@@ -31,57 +31,57 @@
 
 | 技能 | 安装 | 公共 | Claude | Trae | CodeBuddy | WorkBuddy | 简介 | 版本 |
 |---|---|---|---|---|---|---|---|---|
-| brainstorming | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | You MUST use this before any creative work - creating features, buildi… | 一致 |
-| diagnosing-superpowers | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when a superpowers session went wrong and your human partner wants… | 一致 |
-| dispatching-parallel-agents | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when facing 2+ independent tasks that can be worked on without sha… | 一致 |
-| executing-plans | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when executing an implementation plan in the current session as th… | 一致 |
-| find-skills | 4 | ✅ | 🔗 | 🔗 |  | ✅ | Helps users discover and install agent skills when they ask questions … | 一致 |
-| finishing-a-development-branch | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when implementation is complete, all tests pass, and you need to d… | 一致 |
-| receiving-code-review | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when receiving code review feedback, before implementing suggestio… | 一致 |
-| requesting-code-review | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when completing tasks, implementing major features, or before merg… | 一致 |
-| subagent-driven-development | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when executing implementation plans with independent tasks in the … | 一致 |
-| systematic-debugging | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when encountering any bug, test failure, or unexpected behavior, b… | 一致 |
-| test-driven-development | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when implementing any feature or bugfix, before writing implementa… | 一致 |
-| using-git-worktrees | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when starting feature work that needs isolation from current works… | 一致 |
-| using-superpowers | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when starting any conversation - establishes how to find and use s… | 一致 |
-| verification-before-completion | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when about to claim work is complete, fixed, or passing, before co… | 一致 |
-| writing-plans | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when you have a spec or requirements for a multi-step task, before… | 一致 |
-| writing-skills | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | Use when creating new skills, editing existing skills, or verifying sk… | 一致 |
+| brainstorming | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 创作前先澄清意图与需求：任何新功能/新组件动手前必须先头脑风暴 | 一致 |
+| diagnosing-superpowers | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | superpowers 会话出问题时复盘原因并生成 bug 报告 | 一致 |
+| dispatching-parallel-agents | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 两个以上互不依赖的任务并行派发子代理处理 | 一致 |
+| executing-plans | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 按既定实现计划在当前会话逐任务执行（实施者视角） | 一致 |
+| find-skills | 4 | ✅ | 🔗 | 🔗 |  | ✅ | 帮用户发现并安装可用技能（“有没有技能能做 X？”） | 一致 |
+| finishing-a-development-branch | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 开发分支收尾：决定合并、PR 还是清理 | 一致 |
+| receiving-code-review | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 收到审查意见先技术求证再改，不盲从不敷衍 | 一致 |
+| requesting-code-review | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 完成任务或合并前发起代码审查，核验是否满足需求 | 一致 |
+| subagent-driven-development | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 用子代理逐任务执行实现计划，适合任务相互独立时 | 一致 |
+| systematic-debugging | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 遇到 bug/测试失败先系统化定位根因，再谈修复 | 一致 |
+| test-driven-development | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 测试驱动开发：先写测试再写实现，红-绿-重构 | 一致 |
+| using-git-worktrees | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 用 git worktree 隔离功能开发，不污染当前工作区 | 一致 |
+| using-superpowers | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 会话开始时建立“先查技能再回复”的使用约定 | 一致 |
+| verification-before-completion | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 宣称“完成/修好/通过”前必须先跑验证命令，凭证据说话 | 一致 |
+| writing-plans | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 把需求写成可执行的实现计划，动代码之前用 | 一致 |
+| writing-skills | 5 | ✅ | 🔗 | 🔗 | 🔗 | ✅ | 创建/修改技能（SKILL.md）的规范流程与部署前校验 | 一致 |
 
 ## 前端与设计 ｜ 7 个
 
 | 技能 | 安装 | 公共 | Claude | Trae | CodeBuddy | WorkBuddy | 简介 | 版本 |
 |---|---|---|---|---|---|---|---|---|
-| ardot-pixel-restore | 1 |  |  |  |  | ✅ | 将 Ardot（或任意）设计稿画板一比一还原为 HTML 的像素 diff 闭环工作流。当用户给出设计稿截图/画板导出图并要求"还原/复刻/… | — |
-| frontend-design | 4 | ✅ | 🔗 | 🔗 |  | ✅ | Guidance for distinctive, intentional visual design when building new … | 一致 |
-| frontend-project-delivery | 2 | ✅ |  |  |  | ✅ | Use when delivering or continuing frontend features whose requirements… | 一致 |
-| impeccable | 2 | ✅ |  |  |  | ✅ | Use when the user wants to design, redesign, shape, critique, audit, p… | 一致 |
-| mini-program-ui-showcase | 2 | ✅ |  |  |  | ✅ | — | 一致 |
-| taste | 2 | ✅ |  |  |  | ✅ | Anti-slop frontend skill for landing pages, portfolios, and redesigns.… | 一致 |
-| ui-ux-pro-max | 3 | ✅ | 🔗 |  |  | ✅ | UI/UX design intelligence for web and mobile. Searchable local databas… | 一致 |
+| ardot-pixel-restore | 1 |  |  |  |  | ✅ | Ardot 设计稿画板一比一像素级还原为 HTML 的 diff 闭环工作流 | — |
+| frontend-design | 4 | ✅ | 🔗 | 🔗 |  | ✅ | 新建/重塑界面时的视觉方向指导，避免模板化外观 | 一致 |
+| frontend-project-delivery | 2 | ✅ |  |  |  | ✅ | 前端需求/设计/契约跨会话漂移时的交付与继续开发 | 一致 |
+| impeccable | 2 | ✅ |  |  |  | ✅ | 前端界面设计-审查-打磨全流程：落地页、仪表盘、组件、空状态等 | 一致 |
+| mini-program-ui-showcase | 2 | ✅ |  |  |  | ✅ | 小程序 UI 展示图 + 小红书爆款文案生成（Puppeteer 截图） | 一致 |
+| taste | 2 | ✅ |  |  |  | ✅ | 落地页、作品集与改版的反模板审美设计 | 一致 |
+| ui-ux-pro-max | 3 | ✅ | 🔗 |  |  | ✅ | UI/UX 设计智能库：风格、配色、字体搭配、UX 规范、图表一键检索 | 一致 |
 
 ## 视频与内容创作 ｜ 5 个
 
 | 技能 | 安装 | 公共 | Claude | Trae | CodeBuddy | WorkBuddy | 简介 | 版本 |
 |---|---|---|---|---|---|---|---|---|
-| gc-minimal-zine-poster-v0-1 | 2 | ✅ |  |  |  | ✅ | Generate Minimal Zine Poster v0.1 poetic paper-poster prompts and the … | 一致 |
-| hyperframes | 2 | ✅ |  |  |  | ✅ | Create video compositions, animations, title cards, overlays, captions… | 一致 |
-| remotion-video-toolkit | 2 | ✅ |  |  |  | ✅ | Complete toolkit for programmatic video creation with Remotion + React… | ⚠️ 2 个版本 |
-| social-card-generator | 2 | ✅ |  |  |  | ✅ | Generate shareable social media image cards from text/marketing copy u… | 一致 |
-| video-shotcraft | 2 | ✅ |  |  |  | ✅ | Create cinematic product videos from shot recipe cards, a validated te… | 一致 |
+| gc-minimal-zine-poster-v0-1 | 2 | ✅ |  |  |  | ✅ | 极简 zine 风纸感海报提示词与配图生成，日韩编辑风留白 | 一致 |
+| hyperframes | 2 | ✅ |  |  |  | ✅ | HTML 视频合成：标题卡、字幕、转场、TTS 配音、音频可视化 | 一致 |
+| remotion-video-toolkit | 2 | ✅ |  |  |  | ✅ | Remotion + React 程序化视频全家桶：动画、字幕、图表、渲染、模板 | ⚠️ 2 个版本 |
+| social-card-generator | 2 | ✅ |  |  |  | ✅ | 文案转社交媒体分享图（HTML + Puppeteer 截图） | 一致 |
+| video-shotcraft | 2 | ✅ |  |  |  | ✅ | 镜头配方卡 + 已验收模板制作电影感产品视频，运镜与节奏卡点 | 一致 |
 
 ## 平台与效率工具 ｜ 8 个
 
 | 技能 | 安装 | 公共 | Claude | Trae | CodeBuddy | WorkBuddy | 简介 | 版本 |
 |---|---|---|---|---|---|---|---|---|
-| anysearch | 2 | ✅ |  |  |  | ✅ | Real-time search engine supporting web search, vertical domain search,… | 一致 |
-| cc | 2 | ✅ | ✅ |  |  |  | 当用户要求用 Claude Code（cc）完成/实现/修改项目代码，或需要一个独立编码执行者而由 DSH 负责规划与审查时使用。规范：he… | 一致 |
-| obsidian | 2 | ✅ |  |  |  | ✅ | Work with Obsidian vaults (plain Markdown notes) and automate via note… | 一致 |
-| obsidian-daily-archive | 2 | ✅ |  |  |  | ✅ | 每日自动将 WorkBuddy 工作记忆日志归档到 Obsidian 知识库。扫描 .workbuddy/memory/YYYY-MM-DD… | 一致 |
-| tabbit | 2 | 🔗 | 🔗 |  |  |  | Use for browser navigation, inspection, interaction, and visual verifi… | 一致 |
-| token-wise | 2 | ✅ |  |  |  | ✅ | Save AI model tokens and cost without degrading quality. Use when the … | 一致 |
-| windows-rogue-app-uninstall | 2 | ✅ |  |  |  | ✅ | Remove stubborn/rogue Windows software (毒瘤软件) that survives normal uni… | ⚠️ 2 个版本 |
-| zhongzhuan-task | 3 | ✅ |  |  | ✅ | ✅ | 双角色跨平台 agent 协作协议：通过 Obsidian 中转层（D:\文档\Agent-knowledge-base\中转层\）制定、领… | ⚠️ 2 个版本 |
+| anysearch | 2 | ✅ |  |  |  | ✅ | 实时搜索引擎：网页/垂直域/并行批量搜索与网页内容提取 | 一致 |
+| cc | 2 | ✅ | ✅ |  |  |  | 用 Claude Code 干活的规范：headless 调用 + worktree 隔离 + DSH 验收 | 一致 |
+| obsidian | 2 | ✅ |  |  |  | ✅ | 操作 Obsidian 笔记库（纯 Markdown），配合 notesmd-cli 自动化 | 一致 |
+| obsidian-daily-archive | 2 | ✅ |  |  |  | ✅ | 每日把 WorkBuddy 工作记忆日志归档进 Obsidian 知识库 | 一致 |
+| tabbit | 2 | 🔗 | 🔗 |  |  |  | 通过 Tabbit CLI 做浏览器导航、交互与视觉验证 | 一致 |
+| token-wise | 2 | ✅ |  |  |  | ✅ | 省 token 不降质：僵尸会话、上下文膨胀、冗长输出的分层优化 | 一致 |
+| windows-rogue-app-uninstall | 2 | ✅ |  |  |  | ✅ | 卸载顽固/流氓软件：假卸载器、驻留服务、DLL 注入、死文件关联 | ⚠️ 2 个版本 |
+| zhongzhuan-task | 3 | ✅ |  |  | ✅ | ✅ | 双角色跨平台协作：经 Obsidian 中转层制定、领取、执行、回报任务 | ⚠️ 2 个版本 |
 
 ## 版本分叉
 
@@ -107,4 +107,4 @@
 
 ---
 
-*本清单由扫描脚本自动生成；`cc`、`taste`、`tabbit`、`anysearch` 等第三方技能版权归原作者所有，本仓库仅作索引，不包含技能本体文件。*
+*本清单由扫描脚本自动生成。「简介」列为中文摘要，原始描述以各技能目录下的 `SKILL.md` 为准；`cc`、`taste`、`tabbit`、`anysearch` 等第三方技能版权归原作者所有，本仓库仅作索引，不包含技能本体文件。*
